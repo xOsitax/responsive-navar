@@ -11,21 +11,36 @@
     <meta name="author" content="Yessenia Carlos" />
     <title>Recipes</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
     <header>
-      <div class="layout__header">
-        <h2 class="logo">Head.</h2>
+      <div class="topnav" id="responsivNav">
+        <nav>
+          <a href="#index" class="active">Head.</a>
+          <a href="#news">Works</a>
+          <a href="#contact">Service</a>
+          <a href="#about">Contacts</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </nav>
       </div>
 
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__li"><a class="nav__link" href="#">Works</a></li>
-          <li class="nav__li"><a class="nav__link" href="#">Services</a></li>
-          <li class="nav__li"><a class="nav__link" href="#">Contacts</a></li>
-        </ul>
-      </nav>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("responsivNav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
     </header>
 
     <main>
