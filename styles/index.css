@@ -26,13 +26,6 @@ body {
   padding: 40px 20px;
 }
 
-.image-container img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-left: 40px;
-}
-
 @media (max-width: 900px) {
   .layout__main {
     flex-direction: column;
